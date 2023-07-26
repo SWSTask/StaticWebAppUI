@@ -1,7 +1,8 @@
 import React from "react";
 import './index.css';
+import CardComponent from "../CardComponent";
 
-export const LandingPage = () => {
+export const LandingPage = ({ data }) => {
     return (
         <div className="landing-page">
             <div className="landing-page--header">
@@ -51,7 +52,13 @@ export const LandingPage = () => {
             <div className="landing-page--what-do-we-do-section">
                 <h2>What do we do</h2>
                 <h5>you might not have heard of us, but we are the people behind the following impactful programmers.</h5>
-                <div></div>
+                <div className="section-bar">
+                    {
+                        data.map((item, index) => {
+                            return (<CardComponent key={index} title={item.title[0].text} text={item.text} />)
+                        })
+                    }
+                </div>
                 <button>More about what we do</button>
             </div>
         </div>

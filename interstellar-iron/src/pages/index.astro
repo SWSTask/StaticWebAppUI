@@ -1,6 +1,15 @@
 ---
+import {getAllPosts} from '../prismic.js';
 import {LandingPage} from '../components/index';
+
+const response = await getAllPosts();
+
+const data = response.results.map(item => {
+	return item.data;
+});
 ---
+
+
 
 <html lang="en">
 	<head>
@@ -11,6 +20,6 @@ import {LandingPage} from '../components/index';
 		<title>Astro</title>
 	</head>
 	<body>
-		<LandingPage />
+		<LandingPage client:load data={data}/>
 	</body>
 </html>

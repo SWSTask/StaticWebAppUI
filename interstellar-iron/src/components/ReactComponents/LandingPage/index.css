@@ -198,3 +198,9 @@
         cursor: pointer;
     }
 }
+
+.section-bar {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}

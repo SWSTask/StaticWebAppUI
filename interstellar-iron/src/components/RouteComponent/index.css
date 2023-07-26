@@ -1,0 +1,9 @@
+.route-component {
+    text-align: center;
+
+    & button {
+        text-decoration: none;
+        background-color: antiquewhite;
+        color: black;
+    }
+}

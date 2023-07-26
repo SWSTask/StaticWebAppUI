@@ -20,6 +20,13 @@ const data = response.results.map(item => {
 		<title>Astro</title>
 	</head>
 	<body>
-		<LandingPage client:load data={data}/>
+		<LandingPage client:load data={data}>
+		    <a href="/">Home</a>
+            <a href="/wip/">What to do</a>
+            <a href="/wip/">The digital divide</a>
+            <a href="/wip/">Get Involved</a>
+            <a href="/wip/">Our network</a>
+            <a href="/wip/">Insights</a>		   
+		</LandingPage>
 	</body>
 </html>

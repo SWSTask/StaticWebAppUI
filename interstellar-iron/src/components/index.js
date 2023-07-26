@@ -1,2 +1,2 @@
 export * from './ReactComponents/index';
-// export * from './Routes/index';
+export * from './RouteComponent/index';

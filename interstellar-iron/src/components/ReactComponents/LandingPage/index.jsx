@@ -2,7 +2,7 @@ import React from "react";
 import './index.css';
 import CardComponent from "../CardComponent";
 
-export const LandingPage = ({ data }) => {
+export const LandingPage = ({ data, children }) => {
     return (
         <div className="landing-page">
             <div className="landing-page--header">
@@ -18,12 +18,7 @@ export const LandingPage = ({ data }) => {
                     <p>Foundation</p>
                 </div>
                 <div className="sub-header-tabs">
-                    <a href="/">Home</a>
-                    <a href="/">What to do</a>
-                    <a href="/">The digital divide</a>
-                    <a href="/">Get Involved</a>
-                    <a href="/">Our network</a>
-                    <a href="/">Insights</a>
+                    {children}
                 </div>
             </div>
             <div className="landing-page--contents">

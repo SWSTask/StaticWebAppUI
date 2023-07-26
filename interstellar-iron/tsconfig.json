@@ -1,9 +1,5 @@
 {
   "extends": "astro/tsconfigs/base",
-  "include": [
-    "env.d.ts",
-    ".slicemachine/prismicio.d.ts"
-  ],
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react"

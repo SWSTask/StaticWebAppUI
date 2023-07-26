@@ -28,7 +28,7 @@ export const LandingPage = ({ data, children }) => {
                     <button>Get Involved now</button>
                 </div>
                 <div className="content-block-2">
-                    <img src="../../../../public/images/sample2.jpg" />
+                    <img src="../../../../public/images/sample2.jpg" alt="sample image" />
                     <div>
                         <h3>We are a social change charity, <br /> helping people to improve their lives <br /> through digital</h3>
                         <h4>we tackle the most pressing issues of our time, working <br /> with partners in thousands of communities across the UK <br /> and further afield.</h4>
